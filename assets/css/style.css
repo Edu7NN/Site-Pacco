@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;400;600;700&family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    line-height: 45px;
+    margin: 20px 0px;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.header--left p {
+    font-size: 22px;
+    font-family: 'oswald', sans-serif;
+}
+
+.header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header--menu {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header--menu img {
+    width: 24px;
+    height: 24px;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fdbbbc;
+}
+
+.area1--content {
+    padding: 150px 80px;
+    background-size: cover;
+    background-position: left;
+}
+
+.area1--content a {
+    display: inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.area1--content a:hover {
+    background-color: #454545;
+    color: #fff;
+}
+
+.area--text {
+    margin-bottom: 50px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif
+}
+
+.area1--img1 {
+    background-image: url(../img/princinpal.png);
+    background-size: cover;
+    background-position: center;
+    padding: 320px 80px;
+    box-shadow: 2px 2px 1px #454545;
+}
+
+.area2 {
+    display: flex;
+}
+
+.area2--content {
+    flex: 1;
+    text-align: center;
+    padding: 45px;
+}
+
+.area2--content img {
+    width: 48px;
+    height: 48px;
+    padding: 14px;
+    border: 5px solid #000;
+    border-radius: 50%;
+}
+
+.area2--content p {
+    font-family: 'Open Sans', sans-serif
+}
+
+h3 {
+    font-family: 'oswald', sans-serif;
+}
+
+.area3 {
+    max-width: 1140px;
+    margin: auto;
+    padding: 12px;
+}
+
+.sale {
+    display: flex;
+}
+
+.sale--item {
+    flex: 1;
+    text-align: center;
+    background-color: #d2d2d2;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.sale--item--img img {
+    width: 94px;
+    height: 120px;
+}
+
+.sale--item--name {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.sale--item--price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cart {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 80px;
+    background-color: #252525;
+    color: #fff;
+}
+
+@media (min-width: 769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media  (min-width: 426px) and (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1 {
+        flex-direction: column;
+    }
+
+    .area1--content {
+        flex-direction: column;
+    }
+
+    .area2 {
+        flex-direction: column;
+    }
+
+    .sale {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale--item {
+        flex: 1;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .sale--item:nth-child(1){
+        padding: 46px;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3-content {
+       padding: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header--menu {
+        margin-left: 20px;
+    }
+
+    .area1,
+    .area2,
+    .area3 {
+        grid-template-columns: 1fr;
+    }
+
+    .area2 {
+        flex-direction: column;
+    }
+
+    .sale {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale--item {
+        flex: 1;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .sale--item:nth-child(1){
+        padding: 46px;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3-content {
+        padding: 40px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+}
